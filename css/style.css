@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ---- Header ---- */
+
+header {
+    background-color: #ffc300;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:sticky;
+    top: 0px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+
+/* -----------INDEX------------- */
+
+/* Portada */
+
+.portada{
+    background-color: #003566;
+    height: 100vh;
+    display: flex;
+    padding: 20px;
+}
+
+.portada img{
+    height: 600px;
+    padding: 20px;
+    margin: 5px;
+}
+
+
+/* ---------- CONTACTO ------------  */
+
+/*  */
+
+
+
+.portada-contacto h2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.cuestionario-contacto {
+    display: flex;
+    padding: 20px;
+    justify-content: left;
+    background-image: url();
+}
