@@ -1,55 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Juan Román Riquilme</title>
 </head>
+
 <body>
-    <header>
-        <h1>Juan Román Riquilme</h1>
-            
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./pages/trayectoria.html">Trayectoria</a></li>
-                <li><a href="./pages/trofeos.html">Trofeos</a></li>
-                <li><a href="./pages/goles.html">Goles</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand w-50" href="#">JUAN ROMÁN RIQUELME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/trofeos.html">Trofeos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/goles.html">Goles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contacto.html">Contacto</a>
+                    </li>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="portada">
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit delectus quia ut beatae deserunt est consectetur laboriosam cum atque incidunt, assumenda, ratione sequi aliquam, nesciunt ab! Aliquam odit obcaecati neque!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis incidunt enim nemo nam optio porro dolor minus! Similique obcaecati commodi doloremque. Debitis dolor totam amet ipsum libero eos autem accusamus!
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum dolorum eius cupiditate aperiam? Non pariatur incidunt officia voluptates cupiditate quidem fugit, vel fuga eaque accusantium eligendi unde culpa? Aut, id. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium at aperiam necessitatibus eos autem amet, asperiores molestiae dolores recusandae deserunt provident voluptates atque doloribus dolor enim ea unde vel debitis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti atque quam tempora ex, alias quae sed ullam, sint hic odit optio cum voluptate esse distinctio veniam voluptatibus ipsum at provident!Lorem
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero saepe quas ipsum, iste nostrum inventore vero aliquid in facilis vel, voluptates aperiam officiis velit et sunt? Doloremque porro ut voluptatibus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus cumque debitis explicabo. Libero amet, alias possimus nostrum beatae sit quis inventore aliquid sint? Necessitatibus ab culpa obcaecati accusamus fugit eligendi?
-                </p>
-            </div>
-            
-            
-            <img src="https://cloudfront-us-east-1.images.arcpublishing.com/artear/QLNSCUL7PZIBGS27B4XQPOQ4EU.jpg" alt="">
-            
-        </section>
-        
-        
-        <section>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius dolorem numquam, praesentium consectetur odio dolorum et perferendis dolore ea eveniet veniam beatae deleniti animi error eos rem harum hic fuga!
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil explicabo illum dolore sint! Maiores porro eaque laudantium deserunt odit esse dolor maxime aut, amet eum! Rerum quaerat nihil consectetur asperiores?
-            </p>
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-5">
 
+                    <h2 class="text-center display-1 fw-bold">El Idolo Xeneize</h2>
+
+                    <p class="text-center fs-6 fw-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                        Praesentium quisquam quaerat qui dolorum ipsam porro voluptatibus maiores quos libero adipisci,
+                        dolor reprehenderit facere rem tempora?</p>
+
+                </div>
+                <div class="col-lg-7">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./img/QLNSCUL7PZIBGS27B4XQPOQ4EU.jpg" class="d-block w-100 img-fluid" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./img/EO2_Em3VUAIWdqc.jpg" class="d-block w-75 img-fluid" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                    
+
+                </div>
+            </div>
         </section>
-        
     </main>
 
-    <footer>Pie de página</footer>
-    
+
+    <footer>
+
+        <div class="d-flex justify-content-center justify-content-lg-start">
+            <a class="btn btn-warning w-50 boton-footer" href="#" role="button">Volver hacia arriba</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+
 </body>
+
 </html>

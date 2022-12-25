@@ -1,69 +1,25 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+.boton-footer {
+    border-radius: 200px;
+    
 }
 
-ul,ol {
-    list-style: none;
+.portada-contacto{
+    background-image: url(../img/QLNSCUL7PZIBGS27B4XQPOQ4EU.jpg);
+    background-position: center;
+    background-size: cover;
 }
 
-a {
-    text-decoration: none;
+.btn-cuestionario{
+    background-color:azure;
+    color: rgba(0, 0, 255, 0.603);
+    border-radius: 25px;
+    border-color: rgba(0, 0, 255, 0.603);
+    transition: 0,15s ease-in;
 }
 
-/* ---- Header ---- */
-
-header {
-    background-color: #ffc300;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position:sticky;
-    top: 0px;
-}
-
-header nav ul {
-    display: flex;
-    gap: 20px;
-}
-
-
-/* -----------INDEX------------- */
-
-/* Portada */
-
-.portada{
-    background-color: #003566;
-    height: 100vh;
-    display: flex;
-    padding: 20px;
-}
-
-.portada img{
-    height: 600px;
-    padding: 20px;
-    margin: 5px;
-}
-
-
-/* ---------- CONTACTO ------------  */
-
-/*  */
-
-
-
-.portada-contacto h2{
-    align-items: center;
-    justify-content: center;
-    display: flex;
-}
-
-.cuestionario-contacto {
-    display: flex;
-    padding: 20px;
-    justify-content: left;
-    background-image: url();
+.btn-cuestionario:hover{
+    background-color:rgba(0, 0, 255, 0.603);
+    color: azure;
+    border:solid azure;
+    border-color: azure;
 }

@@ -5,43 +5,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Juan Román Riquilme</title>
 </head>
 
 <body>
-    <header>
-        <h1>Juan Román Riquilme</h1>
-
-        <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./trayectoria.html">Trayectoria</a></li>
-                <li><a href="./trofeos.html">Trofeos</a></li>
-                <li><a href="./goles.html">Goles</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+    <header class="navbar navbar-expand-lg bg-body-tertiary border-bottom">
+        <div class="container">
+            <a class="navbar-brand w-50" href="#">JUAN ROMÁN RIQUELME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trayectoria.html">Trayectoria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./trofeos.html">Trofeos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./goles.html">Goles</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
 
     <main>
         <section class="portada-contacto">
 
-            <h2>CONTACTANOS</h2>
-            
+            <h2 class="text-warning bg-dark">CONTACTANOS</h2>
+
             <article class="cuestionario-contacto">
                 <form action="#">
-                    <label for=""> Nombre y Apellido
-                        <input type="text" placeholder="NOMBRE COMPLETO"><br>
+                    <label class="text-white" for=""> Nombre y Apellido
+                        <input class="form-control" type="text" placeholder="NOMBRE COMPLETO"><br>
                     </label>
-                    
-                    <label for="email">Tu email de contacto:
-                        <input type="email" placeholder="aaa@gmail.com" name="email"><br>
+
+                    <label class="text-white" for="email">Tu email de contacto:
+                        <input class="form-control" type="email" placeholder="aaa@gmail.com" name="email"><br>
                     </label>
-                    <label for="Observaciones"> Observaciones:<br>
+                    <div class="d-flex justify-content-start">
+                    <input type="submit" value="Enviar" class="btn btn-cuestionario">
+                    </div>
+                    <label class="text-white" for="Observaciones"> Observaciones:<br>
                         <textarea placeholder="Ingresa tu opinión"></textarea>
                     </label> <br>
-                    <p>Que sección te gusto más?</p>
+                    <p class="text-white">Que sección te gusto más?</p>
                     <select name="letra" id="letra">
                         <option value="Inicio">Inicio</option>
                         <option value="Trofeos">Trofeos</option>
@@ -49,19 +70,27 @@
                         <option value="Goles">Goles</option>
 
                     </select>
-                    <div>Queres recibir más info sobre nosotros?
+                    <div class="text-white">Queres recibir más info sobre nosotros?
                         <input type="checkbox" name="acepta" value="1">
                     </div>
                     <input type="reset" value="BORRAR">
+             
                 </form>
             </article>
         </section>
-        
+
     </main>
-    
+
     <footer>
-        
+
+        <div class="d-flex justify-content-center justify-content-lg-start">
+            <a class="btn btn-warning w-50 boton-footer" href="#" role="button">Volver hacia arriba</a>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
