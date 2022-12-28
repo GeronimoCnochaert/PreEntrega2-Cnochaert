@@ -43,39 +43,50 @@
 
 
     <main>
-        <section class="portada-contacto">
+        <section class="portada-contacto container-fluid p-3">
 
-            <h2 class="text-warning bg-dark">CONTACTANOS</h2>
+            <h2 class="display-2 fw-bold text-center">CONTACTANOS</h2>
+            
+            <div class="row">
 
-            <article class="cuestionario-contacto">
-                <form action="#">
-                    <label class="text-white" for=""> Nombre y Apellido
-                        <input class="form-control" type="text" placeholder="NOMBRE COMPLETO"><br>
-                    </label>
+                <div class="col-md-5 ">
+                    <p class="fw-bold text-white text-center fs-4">Nos interesa conocerte y saber tù opinion al
+                        respecto, saber que es lo que te gustaria, contenido que desees ver o cambios que harias.
+                        Recorda que tù opinion es de gran interes!</p><br>
+                </div>
 
-                    <label class="text-white" for="email">Tu email de contacto:
-                        <input class="form-control" type="email" placeholder="aaa@gmail.com" name="email"><br>
-                    </label>
-                    <div class="d-flex justify-content-start">
-                    <input type="submit" value="Enviar" class="btn btn-cuestionario">
-                    </div>
-                    <label class="text-white" for="Observaciones"> Observaciones:<br>
-                        <textarea placeholder="Ingresa tu opinión"></textarea>
-                    </label> <br>
-                    <p class="text-white">Que sección te gusto más?</p>
-                    <select name="letra" id="letra">
-                        <option value="Inicio">Inicio</option>
-                        <option value="Trofeos">Trofeos</option>
-                        <option value="Trayectoria">Trayectoria</option>
-                        <option value="Goles">Goles</option>
+                <article class="cuestionario-contacto col-md-7">
+                    
 
-                    </select>
-                    <div class="text-white">Queres recibir más info sobre nosotros?
-                        <input type="checkbox" name="acepta" value="1">
-                    </div>
-                    <input type="reset" value="BORRAR">
-             
-                </form>
+                    <form action="#">
+                        <label class="text-white" for=""> Nombre y Apellido
+                            <input class="form-control" type="text" placeholder="NOMBRE COMPLETO"><br>
+                        </label>
+
+                        <label class="text-white" for="email">Tu email de contacto:
+                            <input class="form-control" type="email" placeholder="ejemplo@email.com" name="email"><br>
+                        </label>
+                        <div class="d-flex justify-content-center ">
+                            <input type="submit" value="Enviar" class="btn btn-cuestionario">
+                        </div>
+                        <label class="text-white" for="Observaciones"> Observaciones:<br>
+                            <textarea placeholder="Ingresa tu opinión"></textarea>
+                        </label> <br>
+                        <p class="text-white">Que sección te gusto más?</p>
+                        <select name="letra" id="letra">
+                            <option value="Inicio">Inicio</option>
+                            <option value="Trofeos">Trofeos</option>
+                            <option value="Trayectoria">Trayectoria</option>
+                            <option value="Goles">Goles</option>
+
+                        </select>
+                        <div class="text-white">Queres recibir más info sobre nosotros?
+                            <input type="checkbox" name="acepta" value="1">
+                        </div>
+                        <input type="reset" value="BORRAR">
+
+                    </form>
+            </div>
             </article>
         </section>
 
